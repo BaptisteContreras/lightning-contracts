@@ -2,7 +2,9 @@
 
 A list of interfaces needed by the SfLightning project.
 
-An implementation can be found [here](https://github.com/BaptisteContreras/lightning-bundle)
+An implementation can be found [here](https://github.com/BaptisteContreras/lightning-lib)
+Symfony bundle [here](https://github.com/BaptisteContreras/lightning-bundle)
+
 
 
 ## Installation

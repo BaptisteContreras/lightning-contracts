@@ -12,6 +12,4 @@ use Swoole\Http\Server;
 interface LightningFinishEventInterface extends LightningEventInterface
 {
     public function getServer(): Server;
-
-    public function getWorkerId();
 }

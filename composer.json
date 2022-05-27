@@ -24,5 +24,8 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "suggest": {
+    "sflightning/lib": "A library to use Swoole with Symfony. Also an implementation of sflightning/contracts"
+  }
 }

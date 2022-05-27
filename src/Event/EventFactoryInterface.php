@@ -17,15 +17,15 @@ use Swoole\Http\Server;
  */
 interface EventFactoryInterface {
 
-    public function createServerStartEvent(Server $server, $workerId) : LightningServerStartEventInterface;
+    public function createServerStartEvent(Server $server) : LightningServerStartEventInterface;
 
-    public function createServerShutdownEvent(Server $server, $workerId) : LightningServerShutdownEventInterface;
+    public function createServerShutdownEvent(Server $server) : LightningServerShutdownEventInterface;
 
-    public function createFinishEvent(Server $server, $workerId) : LightningFinishEventInterface;
+    public function createFinishEvent(Server $server) : LightningFinishEventInterface;
 
-    public function createTaskEvent(Server $server, $workerId) : LightningTaskEventInterface;
+    public function createTaskEvent(Server $server) : LightningTaskEventInterface;
 
-    public function createWorkerStartEvent(Server $server, $workerId) : LightningWorkerStartEventInterface;
+    public function createWorkerStartEvent(Server $server) : LightningWorkerStartEventInterface;
 
-    public function createWorkerStopEvent(Server $server, $workerId) : LightningWorkerStopEventInterface;
+    public function createWorkerStopEvent(Server $server) : LightningWorkerStopEventInterface;
 }
