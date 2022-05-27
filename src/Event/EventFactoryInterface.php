@@ -6,7 +6,7 @@ namespace Sflightning\Contracts\Event;
 
 use Sflightning\Contracts\Event\Swoole\LightningFinishEventInterface;
 use Sflightning\Contracts\Event\Swoole\LightningServerStartEventInterface;
-use Sflightning\Contracts\Event\Swoole\LightningServerStopEventInterface;
+use Sflightning\Contracts\Event\Swoole\LightningServerShutdownEventInterface;
 use Sflightning\Contracts\Event\Swoole\LightningTaskEventInterface;
 use Sflightning\Contracts\Event\Swoole\LightningWorkerStartEventInterface;
 use Sflightning\Contracts\Event\Swoole\LightningWorkerStopEventInterface;
@@ -19,7 +19,7 @@ interface EventFactoryInterface {
 
     public function createServerStartEvent(Server $server, $workerId) : LightningServerStartEventInterface;
 
-    public function createServerStopEvent(Server $server, $workerId) : LightningServerStopEventInterface;
+    public function createServerShutdownEvent(Server $server, $workerId) : LightningServerShutdownEventInterface;
 
     public function createFinishEvent(Server $server, $workerId) : LightningFinishEventInterface;
 

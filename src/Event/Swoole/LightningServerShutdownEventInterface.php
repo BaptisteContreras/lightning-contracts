@@ -7,9 +7,9 @@ use Sflightning\Contracts\Event\LightningEventInterface;
 use Swoole\Http\Server;
 
 /**
- * Event triggered on Swoole Server "Stop" event
+ * Event triggered on Swoole Server "Shutdown" event
  */
-interface LightningServerStopEventInterface extends LightningEventInterface
+interface LightningServerShutdownEventInterface extends LightningEventInterface
 {
     public function getServer(): Server;
 
